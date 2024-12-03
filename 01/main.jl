@@ -1,5 +1,9 @@
 include("input.jl")
 
-println("First answer: ", sum(abs.(sort(input[:, 1]) .- sort(input[:, 2]))))
+function problem_one()
+    println("First answer: ", sum(abs.(sort(input[:, 1]) .- sort(input[:, 2]))))
+end
 
-println("Second answer: ", mapreduce(val -> sum(input[:, 2] .== val)*val, +, input[:, 1]))
+function problem_two()
+    println("Second answer: ", mapreduce(val -> sum(input[:, 2] .== val)*val, +, input[:, 1]))
+end

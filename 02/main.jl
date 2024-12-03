@@ -12,6 +12,7 @@ function problem_one()
         line = readline(input_file)
     end
 
+    close(input_file)
     println("The number of safe reports are: ", num_safe_reports)
 end
 
@@ -35,6 +36,7 @@ function problem_two()
         line = readline(input_file)
     end
 
+    close(input_file)
     println("The number of safe reports are: ", num_safe_reports)
 end
 

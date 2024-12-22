@@ -11,7 +11,6 @@ function problem_two()
     drive_info = read_disk_info("09/input")
     drive = input_to_vec(drive_info)
     fragmented_drive = fragment_drive_compact(drive)
-    display(fragmented_drive)
 
     println("Checksum: ", calculate_checksum(fragmented_drive))
 end
